@@ -1,0 +1,15 @@
+l1 = [1, 3, 7, 0, 2]
+l2 = []
+
+def descending_order(list):
+    Mini = list[0]
+    for _ in list:
+        if _ >= Mini:
+            Mini = _
+    list.remove(Mini)
+    l2.append(Mini)          
+
+while l1:  
+    descending_order(l1)
+
+print(f'Descending order list: {l2}')
